@@ -1,0 +1,11 @@
+$ python recommender.py --id PP-01
+Input: ID PP-01
+Corpus: 38 documents | Method: TF-IDF + cosine
+Rank  ID     Score   Category           Title
+   1  IR-01  0.1999  Incident Report    Command display freezes after reconnect
+   2  PP-03  0.1427  Policy/Process     Support to engineering handoff process
+   3  PP-06  0.1207  Policy/Process     Incident closure and recurrence review process
+   4  TG-01  0.1165  Technical Guide    Display recovery runbook
+   5  PP-02  0.1046  Policy/Process     Release readiness and rollback process
+
+Comment: Coherent: the policy surfaces the reconnect incident, handoff and closure processes, and display runbook. The release process in fifth place is broader than the immediate triage need.

@@ -1,0 +1,115 @@
+id,title,text,category
+IR-01,Command display freezes after reconnect,"Command display freezes after reconnect
+
+Support received an incident report from an operator: the command display froze after a network reconnect. The record includes observed behavior, impact, priority high, timestamp, error logs, affected software system, and assignment to engineering for investigation.",Incident Report
+IR-02,Login session expires early,"Login session expires early
+
+An operator reported a login session expiring before the configured interval. Support captured an incident ticket with reproduction context, user impact, authentication error log, severity medium, and affected access service. The engineer will investigate the reported failure.",Incident Report
+IR-03,Telemetry panel shows stale values,"Telemetry panel shows stale values
+
+Support logged an incident when the telemetry panel displayed stale values after a data feed interruption. The report records time, impacted system, symptoms, priority high, diagnostic logs, reporter, and escalation to an engineer.",Incident Report
+IR-04,Alert banner missing during failover,"Alert banner missing during failover
+
+The help desk received an incident report describing a missing alert banner during failover. The ticket states observed result, expected behavior, user impact, incident status open, priority high, evidence screenshot, and affected command software.",Incident Report
+IR-05,Search results duplicate records,"Search results duplicate records
+
+An analyst reported duplicate entries in search results after a sync event. Support created an incident record with the observed symptom, affected index service, log excerpt, severity low, timeline, reporter, and triage assignment.",Incident Report
+IR-06,Export request returns error,"Export request returns error
+
+Support documented an incident where an export request returned an error after several minutes. The ticket includes client impact, error code, request timestamp, affected reporting system, priority medium, and engineer assignment.",Incident Report
+IR-07,Map layer fails to load,"Map layer fails to load
+
+An operator contacted support because a map layer failed to load after changing filters. The incident report records steps observed by the caller, system name, screenshot evidence, severity medium, status under investigation, and diagnostic log location.",Incident Report
+IR-08,Notification repeats after acknowledgment,"Notification repeats after acknowledgment
+
+A support specialist opened an incident for repeated notifications after acknowledgment. The record identifies the affected message service, user impact, priority medium, timestamp, logs, reported symptom, and ownership for engineering triage.",Incident Report
+TG-01,Display recovery runbook,"Display recovery runbook
+
+This technical guide explains how to inspect display service health, verify the reconnect queue, read timeout logs, and restart the affected component under approved operations procedure. The runbook lists prerequisites, commands, rollback precautions, and escalation contacts.",Technical Guide
+TG-02,Authentication service configuration,"Authentication service configuration
+
+The configuration manual explains session lifetime settings and authentication service dependencies. It describes approved parameter values, configuration file locations, verification commands, access controls, and operational troubleshooting steps for administrators.",Technical Guide
+TG-03,Telemetry feed troubleshooting,"Telemetry feed troubleshooting
+
+This operations runbook describes how to inspect ingestion lag, check telemetry feed health, locate processing logs, and recover a stalled pipeline. The guide includes prerequisites, diagnostic commands, decision points, and safe restart instructions.",Technical Guide
+TG-04,Failover alert configuration,"Failover alert configuration
+
+The technical manual documents alert routing settings for a failover environment. Administrators can check notification rules, verify banner permissions, inspect service logs, and follow a controlled configuration and recovery procedure.",Technical Guide
+TG-05,Search index maintenance,"Search index maintenance
+
+This guide covers search index maintenance and duplicate record troubleshooting. It provides commands for index inspection, synchronization checks, backup steps, safe rebuild procedure, rollback plan, and operational escalation.",Technical Guide
+TG-06,Report export operations,"Report export operations
+
+The operations guide describes export worker configuration, queue monitoring, timeout settings, and storage permissions. It lists diagnostics, administrator commands, safe service recovery, and escalation criteria for failed exports.",Technical Guide
+TG-07,Map rendering setup,"Map rendering setup
+
+The manual explains map layer configuration, cache refresh, filter settings, and rendering service dependencies. It includes prerequisite access, log paths, administrator verification commands, and recovery steps for a missing layer.",Technical Guide
+TG-08,Notification queue maintenance,"Notification queue maintenance
+
+This technical runbook describes notification queue inspection, acknowledgment settings, message retry controls, and safe worker restart. It gives operations staff configuration steps, monitoring commands, and rollback precautions.",Technical Guide
+TP-01,Reproduce reconnect freeze,"Reproduce reconnect freeze
+
+This test procedure specifies prerequisites, test data, and repeatable steps: open the command display, interrupt the connection, reconnect, and measure response time. The expected result is a responsive display; record actual behavior, logs, pass or fail, and defect reference.",Test Procedure
+TP-02,Verify session expiration interval,"Verify session expiration interval
+
+A QA test case defines setup, credentials, clock synchronization, and steps for measuring login session lifetime. Compare actual timeout with the expected interval, record pass or fail, attach evidence, and link the defect if the session expires early.",Test Procedure
+TP-03,Check telemetry freshness,"Check telemetry freshness
+
+The reproducible test case injects a feed interruption and restoration while monitoring telemetry timestamps. Steps and expected results define freshness thresholds; testers capture actual values, pass or fail status, logs, and evidence.",Test Procedure
+TP-04,Validate failover banner,"Validate failover banner
+
+This QA procedure begins with a standby node and a controlled failover event. Execute the numbered steps, verify the expected alert banner appears, collect screenshots, record actual outcome, pass or fail, and link any defect.",Test Procedure
+TP-05,Test duplicate search filtering,"Test duplicate search filtering
+
+A test case seeds sample records, triggers synchronization, and runs the same search query twice. The expected result is one record per identifier. Record actual result count, pass or fail, test evidence, and defect identifier.",Test Procedure
+TP-06,Exercise export timeout boundary,"Exercise export timeout boundary
+
+This test procedure defines a large export dataset, environment setup, numbered execution steps, and expected completion time. QA records actual response, error code, pass or fail, logs, and a linked defect if export fails.",Test Procedure
+TP-07,Verify map layer filters,"Verify map layer filters
+
+The test case sets map filters, loads the layer, and changes filter values in a repeatable sequence. Expected results specify visible tiles and response time. Record observed rendering, screenshot evidence, pass or fail, and issue link.",Test Procedure
+TP-08,Check notification acknowledgment,"Check notification acknowledgment
+
+This QA procedure sends a test notification, acknowledges it once, waits through the retry interval, and checks for duplicates. Expected result is no repeated message. Record actual count, pass or fail, timestamps, and evidence.",Test Procedure
+RN-01,Release 2.4.1 reconnect correction,"Release 2.4.1 reconnect correction
+
+Release notes for version 2.4.1 describe a correction to reconnect timeout handling in the command display. The change summary cites the incident, deployment impact, compatibility, validation result, known limitations, and rollback instructions.",Release Note
+RN-02,Release 2.4.2 session lifetime fix,"Release 2.4.2 session lifetime fix
+
+Version 2.4.2 release notes announce a fix for early session expiration. The changelog identifies the corrected behavior, related incident, deployment steps, verification result, upgrade caveats, and rollback guidance.",Release Note
+RN-03,Release 2.4.3 telemetry refresh,"Release 2.4.3 telemetry refresh
+
+Release 2.4.3 documents the telemetry refresh correction and improved feed recovery. The notes list changed components, related issue, validation status, deployment impact, remaining limitations, and rollback procedure.",Release Note
+RN-04,Release 2.4.4 failover banner,"Release 2.4.4 failover banner
+
+The version 2.4.4 changelog records a fix to alert banner visibility during failover. It summarizes the resolved incident, package changes, test verification, deployment prerequisites, known issues, and rollback plan.",Release Note
+RN-05,Release 2.4.5 search deduplication,"Release 2.4.5 search deduplication
+
+Release notes for version 2.4.5 describe duplicate search result removal after synchronization. The document names the corrected issue, upgrade behavior, validation tests, deployment instructions, and rollback impact.",Release Note
+RN-06,Release 2.4.6 export stability,"Release 2.4.6 export stability
+
+Version 2.4.6 release notes summarize improved export worker timeout handling. They identify the resolved incident, performance effect, validation evidence, installation steps, remaining limitations, and rollback guidance.",Release Note
+RN-07,Release 2.4.7 map layer loading,"Release 2.4.7 map layer loading
+
+The version 2.4.7 release note lists a correction to map layer loading with active filters. It includes the linked issue, change summary, compatibility checks, deployment impact, verification outcome, and rollback steps.",Release Note
+RN-08,Release 2.4.8 notification retry,"Release 2.4.8 notification retry
+
+Release 2.4.8 documents a fix for repeated notifications after acknowledgment. The changelog includes affected service, incident reference, tested result, deployment notes, known limitations, and rollback procedure.",Release Note
+PP-01,Incident triage and escalation process,"Incident triage and escalation process
+
+Support records each incident with affected system, observed behavior, impact, time, reproduction steps, and available logs. The on-call analyst assigns a priority based on service impact and checks whether a known runbook already covers the failure. If a command display freezes after reconnect, Support links the incident to the display recovery guide and sends the logs and incident ID to Engineering. Operations may apply an approved recovery step while Engineering investigates the cause. The ticket owner records the decision, status, and handoff, then confirms recovery with the operator before closure. Repeated incidents trigger a knowledge review so the runbook and test procedure reflect what was learned.",Policy/Process
+PP-02,Release readiness and rollback process,"Release readiness and rollback process
+
+Before a software release, Engineering links each change to a defect or approved request. QA confirms the related test procedure has a recorded result and verifies the expected behavior against the release candidate. Operations checks deployment prerequisites, monitoring signals, and rollback instructions. A release owner reviews known limitations and signs off only when unresolved high-impact incidents have a decision. The release notes state the version, affected system, validation evidence, compatibility impact, and rollback path. After deployment, Operations compares monitoring with the expected result and records any incident or correction for the next release.",Policy/Process
+PP-03,Support to engineering handoff process,"Support to engineering handoff process
+
+When first-line Support cannot resolve an incident using an approved technical guide, the analyst prepares a handoff for Engineering. The handoff contains the incident ID, affected system, priority, impact, reproducible steps, logs, attempted actions, and a contact for follow-up. Engineering acknowledges ownership and links the ticket to a test procedure or an existing defect. Support continues communication with the operator and avoids repeating diagnostic work already recorded. Once Engineering identifies the cause and fix, the teams update the incident report and relevant runbook with the validated resolution.",Policy/Process
+PP-04,Access review and authentication process,"Access review and authentication process
+
+Service owners review access to operational systems on a regular schedule. Each account has a named owner, approved role, business purpose, and review date. Support escalates reports of early login session expiration with timestamps and authentication logs, while Engineering verifies session handling with the relevant test procedure. Operations uses approved steps to revoke unnecessary access and records the outcome in the review log. The process prohibits sharing credentials in incident reports or technical guides. A recurring login defect or access exception becomes a tracked improvement with an assigned owner.",Policy/Process
+PP-05,Knowledge article update and approval process,"Knowledge article update and approval process
+
+An incident, test failure, or release change may expose outdated instructions. The document owner compares the current technical guide with validated evidence from Support, QA, Engineering, and Operations. The update states the affected system, new steps, prerequisites, rollback precautions, version, and review date. A specialist checks the revised procedure in a safe test environment before the owner publishes it. The old version stays in history so teams can trace why the instruction changed. Support links future tickets to the approved version and reports unclear steps for the next review.",Policy/Process
+PP-06,Incident closure and recurrence review process,"Incident closure and recurrence review process
+
+Support closes a ticket only after the operator confirms service recovery or the owner documents an approved closure reason. The record includes the diagnosis, action, relevant technical guide, responsible team, and observed outcome. At the weekly review, Operations and Engineering compare recurring failures by system and symptom, including reconnect freezes, duplicate search results, and export errors. QA checks whether a repeatable test exists for each recurring issue. The review assigns actions to improve monitoring, tests, and documentation; it does not treat a temporary restart as a permanent correction.",Policy/Process

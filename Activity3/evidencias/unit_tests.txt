@@ -1,0 +1,10 @@
+$ python -m unittest discover -s tests -v
+test_corpus_contract (test_recommender.RecommenderBehavior.test_corpus_contract) ... ok
+test_query_and_unknowns (test_recommender.RecommenderBehavior.test_query_and_unknowns) ... ok
+test_seed_excluded_scores_sorted (test_recommender.RecommenderBehavior.test_seed_excluded_scores_sorted) ... ok
+test_support_seed (test_recommender.RecommenderBehavior.test_support_seed) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.009s
+
+OK

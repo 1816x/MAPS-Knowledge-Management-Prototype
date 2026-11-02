@@ -1,0 +1,13 @@
+MAPS Activity 3: document recommendations for Aster Systems.
+
+Aster is a fictional software company. Its teams handle support tickets, technical guides, test procedures, release notes, and internal processes. In this activity, we combined thirty-two documents from the earlier prototype with six new process documents. Every record is simulated. The result is a corpus of thirty-eight documents in a CSV file with an identifier, title, text, and category.
+
+The recommendation program takes a document ID or a short question. It cleans the text, builds TF-IDF vectors for words and adjacent word pairs, and compares vectors with cosine similarity. It returns five ranked documents and excludes the seed itself. These scores describe vocabulary overlap, not a probability that a result is correct.
+
+In the first test, the seed was the incident triage policy. The leading result was the command display incident, followed by the engineering handoff process, closure review, and the recovery guide. This sequence helps a support analyst move from a rule to an example and an approved action. In the second test, the command display incident retrieved the triage policy, a test procedure, and the related release note. In the third test, a free-text question about reproducing a reconnect freeze returned the incident, reproduction test, release note, policy, and guide.
+
+Why could this reduce rework? A new analyst can find an earlier incident, its validation steps, and the documented correction before investigating from zero. During a handoff, teams can use the same references and make a decision with more context. The ranking is a starting point; a specialist still checks whether the instructions are current and appropriate.
+
+The limitations are visible in our test. Shared template language brought an unrelated alert incident into the incident results. Synonyms such as sign-in and authentication may also fail to match, ambiguous questions can retrieve the wrong system, and short documents provide little context. A simulated and small corpus does not predict live performance.
+
+For real use, I would add system, owner, version, review date, and status metadata; filter by role and access rights before showing results; and suppress obsolete guides. Specialists should label useful and unhelpful recommendations, so we can measure precision at five and improve the model. Later we could compare this transparent baseline with embeddings for synonym coverage, while keeping human review for operational decisions.

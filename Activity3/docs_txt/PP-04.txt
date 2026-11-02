@@ -1,0 +1,3 @@
+Access review and authentication process
+
+Service owners review access to operational systems on a regular schedule. Each account has a named owner, approved role, business purpose, and review date. Support escalates reports of early login session expiration with timestamps and authentication logs, while Engineering verifies session handling with the relevant test procedure. Operations uses approved steps to revoke unnecessary access and records the outcome in the review log. The process prohibits sharing credentials in incident reports or technical guides. A recurring login defect or access exception becomes a tracked improvement with an assigned owner.

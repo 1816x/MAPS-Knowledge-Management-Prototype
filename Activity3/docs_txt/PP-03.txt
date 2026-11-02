@@ -1,0 +1,3 @@
+Support to engineering handoff process
+
+When first-line Support cannot resolve an incident using an approved technical guide, the analyst prepares a handoff for Engineering. The handoff contains the incident ID, affected system, priority, impact, reproducible steps, logs, attempted actions, and a contact for follow-up. Engineering acknowledges ownership and links the ticket to a test procedure or an existing defect. Support continues communication with the operator and avoids repeating diagnostic work already recorded. Once Engineering identifies the cause and fix, the teams update the incident report and relevant runbook with the validated resolution.

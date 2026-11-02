@@ -1,0 +1,3 @@
+Knowledge article update and approval process
+
+An incident, test failure, or release change may expose outdated instructions. The document owner compares the current technical guide with validated evidence from Support, QA, Engineering, and Operations. The update states the affected system, new steps, prerequisites, rollback precautions, version, and review date. A specialist checks the revised procedure in a safe test environment before the owner publishes it. The old version stays in history so teams can trace why the instruction changed. Support links future tickets to the approved version and reports unclear steps for the next review.

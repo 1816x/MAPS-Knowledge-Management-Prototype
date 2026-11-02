@@ -1,0 +1,3 @@
+Release readiness and rollback process
+
+Before a software release, Engineering links each change to a defect or approved request. QA confirms the related test procedure has a recorded result and verifies the expected behavior against the release candidate. Operations checks deployment prerequisites, monitoring signals, and rollback instructions. A release owner reviews known limitations and signs off only when unresolved high-impact incidents have a decision. The release notes state the version, affected system, validation evidence, compatibility impact, and rollback path. After deployment, Operations compares monitoring with the expected result and records any incident or correction for the next release.

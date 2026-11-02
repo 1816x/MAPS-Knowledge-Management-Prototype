@@ -1,0 +1,11 @@
+$ python recommender.py --query 'How do we reproduce and fix the command display freeze after a network reconnect?'
+Input: query 'How do we reproduce and fix the command display freeze after a network reconnect?'
+Corpus: 38 documents | Method: TF-IDF + cosine
+Rank  ID     Score   Category           Title
+   1  IR-01  0.3323  Incident Report    Command display freezes after reconnect
+   2  TP-01  0.2674  Test Procedure     Reproduce reconnect freeze
+   3  RN-01  0.1604  Release Note       Release 2.4.1 reconnect correction
+   4  PP-01  0.0921  Policy/Process     Incident triage and escalation process
+   5  TG-01  0.0781  Technical Guide    Display recovery runbook
+
+Comment: Coherent: the incident and reproduction test lead; the correction release, triage policy, and recovery guide round out the investigation and action sequence.

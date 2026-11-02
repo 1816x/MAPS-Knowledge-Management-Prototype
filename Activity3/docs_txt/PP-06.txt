@@ -1,0 +1,3 @@
+Incident closure and recurrence review process
+
+Support closes a ticket only after the operator confirms service recovery or the owner documents an approved closure reason. The record includes the diagnosis, action, relevant technical guide, responsible team, and observed outcome. At the weekly review, Operations and Engineering compare recurring failures by system and symptom, including reconnect freezes, duplicate search results, and export errors. QA checks whether a repeatable test exists for each recurring issue. The review assigns actions to improve monitoring, tests, and documentation; it does not treat a temporary restart as a permanent correction.

@@ -1,0 +1,3 @@
+Incident triage and escalation process
+
+Support records each incident with affected system, observed behavior, impact, time, reproduction steps, and available logs. The on-call analyst assigns a priority based on service impact and checks whether a known runbook already covers the failure. If a command display freezes after reconnect, Support links the incident to the display recovery guide and sends the logs and incident ID to Engineering. Operations may apply an approved recovery step while Engineering investigates the cause. The ticket owner records the decision, status, and handoff, then confirms recovery with the operator before closure. Repeated incidents trigger a knowledge review so the runbook and test procedure reflect what was learned.

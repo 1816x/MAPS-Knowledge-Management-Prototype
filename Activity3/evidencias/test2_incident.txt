@@ -1,0 +1,11 @@
+$ python recommender.py --id IR-01
+Input: ID IR-01
+Corpus: 38 documents | Method: TF-IDF + cosine
+Rank  ID     Score   Category           Title
+   1  PP-01  0.1999  Policy/Process     Incident triage and escalation process
+   2  IR-04  0.1665  Incident Report    Alert banner missing during failover
+   3  TP-01  0.1279  Test Procedure     Reproduce reconnect freeze
+   4  RN-01  0.1206  Release Note       Release 2.4.1 reconnect correction
+   5  IR-06  0.1030  Incident Report    Export request returns error
+
+Comment: Partly coherent: triage policy, reproduction test and reconnect release are useful. The failover alert and export error are weaker matches caused by shared incident template vocabulary.
